@@ -6,6 +6,7 @@
     --basic-color-3:#ff0000;
     --basic-color-4:#663399;
     --basic-color-5:#0000ff;
+    --basic-border-color-1:#ffffff;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
     height: 100px;
     background-color: var(--secondary-color);
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid var(--basic-border-color-1);
     animation: grow 3s infinite forwards;
 }
 @keyframes grow {
