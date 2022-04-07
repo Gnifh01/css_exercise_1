@@ -1,0 +1,39 @@
+:root{
+    --primary-color: #141414;
+    --secondary-color:#00ff37;
+    --basic-color-1:#ffff00;
+    --basic-color-2:#ff5500;
+    --basic-color-3:#ff0000;
+    --basic-color-4:#663399;
+    --basic-color-5:#0000ff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color)
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .ball {
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    animation: grow 3s infinite forwards;
+}
+@keyframes grow {
+    10% { transform: scale(1.2); background-color: var(--basic-color-1);}
+    20% { transform: scale(1.4); background-color: var(--basic-color-2);}
+    30% { transform: scale(1.6); background-color: var(--basic-color-3);}
+    50% { transform: scale(1.8); background-color: var(--basic-color-4);}
+    70% { transform: scale(2); background-color: var(--basic-color-5);}
+  }
